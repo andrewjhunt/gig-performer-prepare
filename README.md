@@ -16,7 +16,7 @@ Status: Alpha version which needs to be tested on a variety of systems.
 
 [2] Tn the File menu, open a "New" script
 
-[3] From the [gig-performer-prepare.txt](//andrewjhunt/gig-performer-prepare/blob/main/gig-performer-prepare.txt") page, copy the script text to your new script file
+[3] From the [gig-performer-prepare.txt](./gig-performer-prepare.txt) page, copy the script text to your new script file
 
 [4] Configure the script for your environment
 
