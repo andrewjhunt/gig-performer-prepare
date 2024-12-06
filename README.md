@@ -1,6 +1,6 @@
 # Gig Performer Preparation Script
 
-**macOS only**
+NOTE: **macOS only**
 
 Configurable AppleScript script that checks your system is ready, then starts up everything you need for your gig, and finally starts Gig Performer.
 
@@ -12,7 +12,61 @@ Status: Alpha version which needs to be tested on a variety of systems.
 
 ## Getting Started
 
+[1] Open Apple's "Script Editor" application
+
+[2] Tn the File menu, open a "New" script
+
+[3] From the [gig-performer-prepare.txt](//andrewjhunt/gig-performer-prepare/blob/main/gig-performer-prepare.txt") page, copy the script text to your new script file
+
+[4] Configure the script for your environment
+
+[5] Run the scipt
+
+Note: Github users can clone of fork the repo to maintain your version.
+
+
 ## Configuration
+
+The only part of the script you need to change is the "Configuration" section at the top with 7 sections available.
+
+### requiredFiles
+
+If you're instrument files, Gig files or any content is stored on an SSD or may be in the cloud, then you can check that these files are available before starting Gig Performer.
+
+You don't need to check every file, but just a top-level folder. If the folder is missing, then the script will stop and display a dialog box with "Cancel" or "Continue" buttons. If you click "Cancel", then the script will stop and you can find and connect the external storage. Sometimes it is ok to "Continue" with missing content but Gig Performer capability will be reduced.
+
+This example checks for a set of folders on an SSD:
+
+```applescript
+set requiredFiles to { ¬
+	"/Volumes/MusicSSD/Instruments", ¬
+	"/Volumes/MusicSSD/Instruments/Native Instruments/", ¬
+	"/Volumes/MusicSSD/Instruments/ROLI/", ¬
+	"/Volumes/MusicSSD/Instruments/Spitfire/Spitfire Audio - BBC Symphony Orchestra"}
+```
+
+If all your content is on a local drive and your're confident that it will always be available, then specify an empty array:
+
+```applescript
+set requiredFiles to {}
+```
+
+
+
+### audioInterfaces
+
+
+### usbDevices
+
+
+### bluetoothDevices
+
+### terminalCommands
+
+### shellCommands
+
+### gigFile
+
 
 ## AppleScript oddities
 
