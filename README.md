@@ -183,3 +183,10 @@ Once all the checks are complete, you can start Gig Performer with a specific Gi
 ```applescript
 openDocument("/Users/musios/Documents/Gig Performer/Gig Files/demo.gig")
 ```
+
+
+## Support
+
+If you have any questions or need help, please open an issue on the GitHub repo. If you have a feature request, then please open an issue too.
+
+Alternatively, post a message on the Gig Performer forum. I'm there as "Andrew".
